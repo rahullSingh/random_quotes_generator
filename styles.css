@@ -3,6 +3,7 @@ body {
   margin: 0;
   outline: none;
   overflow-x: hidden;
+  background: gainsboro;
 }
 
 .outline {
@@ -38,13 +39,28 @@ button:hover {
 }
 
 .quoteArea {
-    border: 2px solid;
     text-align: center;
     margin-top: 20px;
-    background: rgb(0 90 255 / 8%);;
-    /* background: #2568a1; */
     border-radius: 3px;
     padding: 5px;
     margin: 5px;
-    border-radius: 30% 30% 60% 11%;
+}
+
+
+/* mobile version for 43em (43*16px===688px)*/
+
+@media (max-width:43em){
+  .quoteArea,button {
+    position: absolute;
+  }
+
+  .quoteArea {
+    top: 10%;
+  }
+
+  button {
+    top: 50%;
+    font-size: calc(100% - 30%);
+    font-weight: 600;
+  }
 }

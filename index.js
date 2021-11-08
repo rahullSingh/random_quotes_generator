@@ -14,7 +14,7 @@ async function newThoughtGenerator(){
   thought.innerText=quote.text;
   author.innerText=quote.author;
 
-  thought.style.color="#B5B5B5";
+  thought.style.color="#000000";
   // author.style.color="#8E8E8E";
   author.style.color="#000000";
 
